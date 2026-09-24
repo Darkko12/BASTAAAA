@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ChatGPT · De herramienta a compañía</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="app" data-view="home">
+  <header class="bar">
+    <a class="brand" href="#home" id="brand" aria-label="ChatGPT, ir al inicio">
+      <span data-logo="logo"></span>
+      <span class="bname">ChatGPT</span>
+      <span class="bsub">De herramienta a compañía</span>
+    </a>
+    <div class="bar-r">
+      <div class="seg" role="group" aria-label="Núcleos">
+        <button type="button" data-nuc="1" class="on">Núcleo 1</button>
+        <button type="button" data-nuc="2">Núcleo 2</button>
+      </div>
+      <button type="button" class="round" id="btnClose" aria-label="Cerrar y volver al inicio">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 2l10 10M12 2 2 12"/></svg>
+      </button>
+      <span class="user" aria-hidden="true"><svg width="29" height="29" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.45"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="9.7" r="3.2"/><path d="M5.8 18.6c1.6-2.6 3.7-3.6 6.2-3.6s4.6 1 6.2 3.6"/></svg></span>
+    </div>
+  </header>
+
+  <button type="button" class="back" id="btnBack" aria-label="Volver">
+    <svg width="13" height="22" viewBox="0 0 12 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2 2 10l8 8"/></svg>
+  </button>
+
+  <main id="stage">
+    <section class="screen" id="s-home" data-id="home" aria-label="Inicio">
+      <div class="home">
+        <span data-logo="logo big"></span>
+        <h1>¿En qué te puedo <span>ayudar</span> hoy?</h1>
+        <div class="cores">
+          <button type="button" class="core-card core-blue" data-go="hub" style="--acc:34,156,255">
+            <span class="cl" data-cluster="blue"></span>
+            <span class="ct"><span class="ey">Núcleo 1</span><strong>La expansión<br>de ChatGPT</strong><small>De herramienta a presencia cotidiana.</small></span>
+            <span class="go">→</span>
+          </button>
+          <button type="button" class="core-card core-red" data-go="n2" style="--acc:255,48,91">
+            <span class="cl" data-cluster="red"></span>
+            <span class="ct"><span class="ey">Núcleo 2</span><strong>Dependencia y<br>vínculo</strong><small>Usos, abusos y relación parasocial.</small></span>
+            <span class="go">→</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="s-hub" data-id="hub" aria-label="La expansión de ChatGPT">
+      <div class="hub-intro">
+        <p class="eyebrow">Núcleo 1</p>
+        <h1 class="title">La expansión de<br>ChatGPT</h1>
+        <p class="lead">Recorré las paradas para entender qué es ChatGPT, quién<br>lo construyó y con quién compite.</p>
+      </div>
+      <div class="hubstage">
+        <button type="button" class="hub-arrow hub-prev" id="hubPrev" aria-label="Volver a las primeras paradas" hidden>≪</button>
+        <div class="hubwrap">
+          <div class="hubtrack" id="hubTrack">
+            <div class="hubpage" id="hubP0">
+              <button type="button" class="hub-card" data-go="chatgpt"><h2>¿Que es chatGPT?</h2><p>Te contamos un poco de este modelo de IA, de otros bots similares y de sus diferencias con este en su tecnología y utilidad.</p></button>
+              <button type="button" class="hub-card" data-go="openai"><h2>¿Que es OpenAI?</h2><p>OpenAI es la empresa que creó ChatGPT; su misión es que la inteligencia artificial general sea desarrollada como código libre y a beneficio de toda la humanidad.</p></button>
+              <button type="button" class="hub-card" data-go="competidores"><h2>Competidores principales</h2><p>IA desarrollada por xAI, integrada principalmente con X. Se caracteriza por respuestas conversacionales, acceso a información actual y un tono más informal.</p></button>
+              <button type="button" class="hub-card" data-go="grok"><h2>Grok</h2><p>IA desarrollada por xAI, integrada principalmente con X. Se caracteriza por respuestas conversacionales, acceso a información actual y un tono más informal.</p></button>
+            </div>
+            <div class="hubpage hubpage-short" id="hubP1">
+              <button type="button" class="hub-card" data-go="uso"><h2>Porcentaje de uso</h2><p>En tan solo 4 años ChatGPT alcanzó los 1000M de usuarios semanales, te mostramos visualmente como fue el crecimiento.</p></button>
+              <button type="button" class="hub-card" data-go="usos"><h2>Uso de ChatGPT</h2><p>OpenIA realizó una investigación sobre los prompts más pedidos por el usuario, se dividió entre 7 categorías distintas.</p></button>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="hub-arrow hub-next" id="hubNext" aria-label="Ver más paradas">≫</button>
+      </div>
+    </section>
+
+    <section class="screen" id="s-chatgpt" data-id="chatgpt" aria-label="¿Qué es ChatGPT?"></section>
+    <section class="screen" id="s-openai" data-id="openai" aria-label="¿Qué es OpenAI?"></section>
+
+    <section class="screen graph-screen" id="s-competidores" data-id="competidores" aria-label="Competidores principales">
+      <div class="graph-head">
+        <p class="eyebrow">Núcleo 1</p>
+        <h1 class="title">Competidores<br>principales</h1>
+        <p class="lead">Compara los flujos de visitas web anuales de los últimos 5 años<br>(Noviembre 2022 – Marzo 2026) de ChatGPT y 6 de sus competidores.</p>
+      </div>
+      <div class="comp-panel">
+        <svg id="compSvg" viewBox="0 0 1120 450" role="img" aria-label="Comparación de competidores por año"></svg>
+        <div class="comp-legend" id="compLegend" aria-label="Competidores"></div>
+      </div>
+    </section>
+
+    <section class="screen" id="s-grok" data-id="grok" aria-label="Grok y otros modelos"></section>
+
+    <section class="screen graph-screen" id="s-uso" data-id="uso" aria-label="Porcentaje del uso">
+      <div class="graph-head">
+        <p class="eyebrow">Núcleo 1</p>
+        <h1 class="title">Porcentaje del uso</h1>
+        <p class="lead" id="usageLead">Te mostramos los usuarios semanales de ChatGPT<br>durante los años.</p>
+      </div>
+      <div class="line-panel">
+        <svg id="lineSvg" viewBox="0 0 1120 470" role="img" aria-label="Usuarios semanales de ChatGPT"></svg>
+      </div>
+      <div class="line-action-wrap">
+        <button type="button" class="line-action" id="btnMonths"><span><small id="ctaSmall">2026</small><b id="ctaMain">Registro de cada mes.</b></span><i id="ctaIcon">≫</i></button>
+      </div>
+    </section>
+
+    <section class="screen graph-screen usage-screen" id="s-usos" data-id="usos" aria-label="¿Para qué usa el usuario ChatGPT?">
+      <div class="graph-head usage-head">
+        <p class="eyebrow">Núcleo 1</p>
+        <h1 class="title">¿Para qué usa el<br>usuario ChatGPT?</h1>
+        <p class="lead">Se analizaron 1.1 millones de conversaciones entre el 15 de Mayo<br>de 2024 y el 26 de Junio de 2025 y estos fueron los resultados.</p>
+      </div>
+      <div class="usage-panel">
+        <div class="usage-copy" id="usageCopy" aria-live="polite"></div>
+        <div class="usage-viz">
+          <svg id="donutSvg" viewBox="0 0 520 390" role="img" aria-label="Usos de ChatGPT por categoría"></svg>
+          <div class="legend" id="legend"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="s-n2" data-id="n2" aria-label="Núcleo 2">
+      <div class="center-screen">
+        <p class="eyebrow">Núcleo 2</p>
+        <h1 class="title">Dependencia y vínculo</h1>
+        <p class="lead">Usos, abusos y relación parasocial. Esta sección se mantiene sin cambios en esta entrega.</p>
+        <button type="button" class="line-action" data-go="home"><span><b>Volver al inicio</b></span><i>≪</i></button>
+      </div>
+    </section>
+  </main>
+
+  <div class="hint" id="hint" aria-hidden="true"><span class="ms">◉</span><span><b id="hintA"></b><br><span id="hintB"></span></span></div>
+  <nav class="dots" id="dots" aria-label="Paradas del Núcleo 1"><i class="dash"></i></nav>
+</div>
+<div class="tip" id="tip" role="tooltip"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
