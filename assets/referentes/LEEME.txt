@@ -1,0 +1,9 @@
+Poné acá tus 3 fotos con estos nombres exactos (así las toma automáticamente):
+
+  sam-altman.jpg
+  greg-brockman.jpg
+  ilya-sutskever.jpg
+
+Si todavía no subiste una foto, la web NO se rompe: muestra automáticamente
+un círculo con las iniciales de la persona en su lugar (ya está programado
+en js/app.js, no hay que tocar nada).
